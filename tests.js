@@ -3,8 +3,12 @@ var moment = require('moment');
 
 // Booleans
 function isTrue(value) {
-    var isTrue = true; 
-    return isTrue;
+    if (value === true){
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 
 avow('isTrue returns true', isTrue(1 + 1 === 2) === true);
