@@ -117,9 +117,13 @@ function isDivisibleByThree(value) {
 avow('isDivisibleByThree returns true if number is divisible by 3', isDivisibleByThree(9) === true);
 
 function makeRandomNumber(value) {
-    var x = (Math.random(value) * 10);
-    var x = Math.round(x);
-    return x;
+    var x = Math.round(Math.random(value));
+    if (x >= 0 && x <= 10) {
+        return false;
+    }
+    else {
+        return true;
+    }   
 }
 
 avow('makeRandomNumber returns a random number between 0 and 10', makeRandomNumber(10) >= 0 && makeRandomNumber(10) <= 10);

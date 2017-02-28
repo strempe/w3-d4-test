@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+
+/*header*/
+
+.lg-primary {
+        display: none;
+        margin:0;
+    }
+
+.navbar .lg-primary img {   
+    width: 175px;
+    height: auto;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.lg-logo {
+    padding-left: 0;
+}
+
+.lg-p-1 {
+    padding-left: 10px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.lg-p-2 {
+    padding-top: 15px;
+    font-weight: bold;
+    padding-right: 0; 
+}
+
+.navbar-default {
+    background-color: white;
+    border: none;
+    margin: 0;
+}
+
+.navbar-brand img {
+    width: 100px;
+    height: auto;
+}
+
+.dropdown {
+    color: #EB148A;
+
+}
+
+.dropdown .btn-lg {
+    background: none;
+    border: none;
+    padding-right: 20px;
+    padding-top: 12px;
+}
+
+.background-img {
+    background: url(../img/background.jpg);
+    background-size: contain;
+    height: 72vw;
+    background-repeat: no-repeat;
+}
+
+.top-padding {
+    padding-top: 10px;
+}
+
+.section-heading h3 {
+    margin: 0;
+    color: #EB148A;
+    text-transform: uppercase;
+    display: inline-block;
+    padding:0 10px;
+}
+
+.section-heading h3:first-child{
+    padding-bottom: 8px;
+    padding-top: 20px;
+}
+.section-heading h1{
+    padding-top: 8px;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: white;
+    line-height: .9;
+}
+
+.three-point-el {
+    display: none;
+}
+
+.three-point-el h3 {
+    color: white;
+    padding: 0;
+}
+
+.three-point-el p {
+   color: #E0D9D3;
+}
+
+/*section*/
+
+.navbar-black {
+    background-color: black;
+    display: none;
+}
+
+.navbar-black li {
+ padding: 9px 0;
+}
+
+.navbar-black a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 13px 7px 11px 7px;
+}
+
+.navbar-black a:hover {
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 13px 7px 11px 7px;
+    background-color: #EB148A;
+}
+
+.i-rt {
+    text-align: right;
+}
+
+.btn-inline {
+    display: inline-block;
+    /*padding: 0;*/
+}
+
+.btn-section {
+    margin-top: -55px;
+}
+
+.btn-section a {
+    margin: 0 3px;
+    width: 200px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 0; 
+    border: 4px solid #979797;
+    background-color: transparent;
+    color: black;
+}
+
+
+.btn-section a:hover {
+    background-color: #C4D667;
+    margin: 0 3px;
+    width: 200px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 0; 
+    border: 4px solid #C4D667;
+    color: black;
+}
+
+.btn-lt {
+    padding-left: 2px; 
+}
+
+.btn-rt {
+    padding-right: 2px;
+}
+
+.lwr-heading h1 {
+    padding-top: 42px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.lwr-p p {
+    color: #777777;
+    font-weight: bold;
+    font-size: 19.5px;
+    padding-top: 15px;
+}
+
+.lwr-text p {
+    font-size: 22px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+
+}
+
+
+
+/*Medium devices (tablets, 768px and up)*/
+
+@media all and (min-width: 768px) {
+    .navbar-header {
+        display: none;
+    }
+    .lg-primary {
+        display: block;
+        padding-bottom: 7px;
+    }
+    .container {
+        margin: 0 auto;
+    }
+    .navbar-black {
+    display: block;
+}
+    .three-point-el {
+        display: block;
+    }
+    .btn-section {
+        text-align: center;
+    }
+    .btn-lt {
+        padding-left: 2px; 
+        text-align: right;
+    }
+    .btn-rt {
+        padding-right: 2px;
+        text-align: left;
+    }
+    .btn-section {
+        margin-top: -130px;
+    }
+    .lwr-heading h1 {
+        margin-top: -100px;
+    }
+}   
+
+/*Large devices (desktops, 992px and up)*/
+
+@media all and (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+    .btn-section {
+        margin-top: -365px;
+    }
+    .lwr-heading h1 {
+        margin-top: -160px;
+    }
+    .btn-section a {
+        color: #E0D9D3;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+
+@media all and (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+    .btn-section {
+        margin-top: -465px;
+    }
+    .lwr-heading h1 {
+        margin-top: -200px;
+    }
+    .three-point-el {
+        padding-top: 40px;
+    }
+    .lwr-p p {
+        margin-top: -80px;
+    }
+
+}
